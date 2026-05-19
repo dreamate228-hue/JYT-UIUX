@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node preview-server.js",
-    "check": "node --check app.js && node --check preview-server.js && node --check api/[...path].js"
+    "check": "node --check app.js && node --check preview-server.js && node --check api/index.js && node --check lib/api-handler.js"
   },
   "engines": {
     "node": ">=18"
