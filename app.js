@@ -788,6 +788,7 @@
   }
 
   function linkElementUrl(element) {
+    if (element?.htmlPageId) return `./api/html-pages/${encodeURIComponent(element.htmlPageId)}`;
     if (element?.htmlUrl) return element.htmlUrl;
     return normalizeLinkUrl(element?.href || element?.text);
   }
@@ -2622,21 +2623,37 @@
   async function updateAdminMessage(id, action) {
     const row = messageList.querySelector(`[data-message-id="${CSS.escape(id)}"]`);
     if (!row) return;
+    const actionButton = row.querySelector(`[data-message-action="${CSS.escape(action)}"]`);
+    if (actionButton?.disabled) return;
+    if (actionButton) actionButton.disabled = true;
     if (action === "delete") {
-      await fetchJson(`./api/admin/messages/${encodeURIComponent(id)}`, { method: "DELETE" });
-      row.remove();
-      if (!messageList.querySelector(".message-list-item")) renderAdminMessages([]);
+      try {
+        await fetchJson(`./api/admin/messages/${encodeURIComponent(id)}`, { method: "DELETE" });
+        row.remove();
+        if (!messageList.querySelector(".message-list-item")) renderAdminMessages([]);
+      } finally {
+        if (actionButton) actionButton.disabled = false;
+      }
       return;
     }
     const likeButton = row.querySelector("[data-message-action='like']");
     const liked = !likeButton.classList.contains("liked");
-    await fetchJson(`./api/admin/messages/${encodeURIComponent(id)}`, {
-      method: "PATCH",
-      body: JSON.stringify({ liked })
-    });
     likeButton.classList.toggle("liked", liked);
     likeButton.setAttribute("aria-label", liked ? "取消喜欢" : "喜欢");
     likeButton.innerHTML = `<img src="${ASSET}${liked ? "like-on.svg" : "like-off.svg"}" alt="">`;
+    try {
+      await fetchJson(`./api/admin/messages/${encodeURIComponent(id)}`, {
+        method: "PATCH",
+        body: JSON.stringify({ liked })
+      });
+    } catch (error) {
+      likeButton.classList.toggle("liked", !liked);
+      likeButton.setAttribute("aria-label", !liked ? "取消喜欢" : "喜欢");
+      likeButton.innerHTML = `<img src="${ASSET}${!liked ? "like-on.svg" : "like-off.svg"}" alt="">`;
+      throw error;
+    } finally {
+      if (actionButton) actionButton.disabled = false;
+    }
   }
 
   function hideMessageToast() {
@@ -2724,7 +2741,9 @@
     const pdfUrl = isResume
       ? "./api/pdf?kind=resume"
       : "./api/pdf?kind=portfolio";
+    const pdfFileName = isResume ? "简历_UIUX_蒋翊涛_19357629233.pdf" : "作品集_UIUX_蒋翊涛_19357629233.pdf";
     pdfDownloadLink.href = pdfUrl;
+    pdfDownloadLink.download = pdfFileName;
     pdfDownloadLink.textContent = adminMode ? "上传最新附件" : "点击下载";
     pdfPreviewBody.scrollTop = 0;
     const cachedPages = pdfPreviewCache.get(kind);
@@ -2839,6 +2858,7 @@
           renderAdminMode();
           openAdminAuth();
         }
+        showGlobalToast("留言状态保存失败。");
       }
     });
     closeMessageToast.addEventListener("click", hideMessageToast);

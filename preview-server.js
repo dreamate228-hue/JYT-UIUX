@@ -42,6 +42,16 @@ function send(response, status, body, headers = {}) {
   response.end(data);
 }
 
+function inlineFileName(name) {
+  return `inline; filename=\"download\"; filename*=UTF-8''${encodeURIComponent(name)}`;
+}
+
+function pdfFileName(kind) {
+  if (kind === "resume") return "简历_UIUX_蒋翊涛_19357629233.pdf";
+  if (kind === "portfolio") return "作品集_UIUX_蒋翊涛_19357629233.pdf";
+  return "附件.pdf";
+}
+
 function readBody(request, limit = 12 * 1024 * 1024) {
   return new Promise((resolve, reject) => {
     let size = 0;
@@ -271,7 +281,11 @@ async function handleApi(request, response, pathname) {
         send(response, 404, "not found");
         return true;
       }
-      response.writeHead(200, { "Content-Type": "application/pdf", "Cache-Control": "no-store" });
+      response.writeHead(200, {
+        "Content-Type": "application/pdf",
+        "Content-Disposition": inlineFileName(pdfFileName(kind)),
+        "Cache-Control": "no-store"
+      });
       fs.createReadStream(target).pipe(response);
       return true;
     }
@@ -291,6 +305,7 @@ async function handleApi(request, response, pathname) {
       const file = path.join(htmlPagesDir, path.basename(item.file));
       response.writeHead(200, {
         "Content-Type": "text/html;charset=utf-8",
+        "Content-Disposition": "inline",
         "Cache-Control": "no-store"
       });
       fs.createReadStream(file).pipe(response);
