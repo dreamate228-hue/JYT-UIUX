@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dreamate 个人画布</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="loadingScreen" class="loading-screen" aria-label="加载页">
+      <div class="loading-stack">
+        <div class="loading-title" aria-label="It's Dreamate . 翊涛">
+          <span class="write-word write-word-en">It‘s Dreamate .</span>
+          <span class="write-word write-word-cn">翊涛</span>
+        </div>
+        <div id="loadingCopy" class="loading-copy"></div>
+      </div>
+    </div>
+
+    <main id="app" class="app is-hidden" aria-label="个人无限画布">
+      <section id="canvasViewport" class="canvas-viewport">
+        <svg id="connectionLayer" class="connection-layer" aria-hidden="true"></svg>
+        <div id="canvasWorld" class="canvas-world"></div>
+      </section>
+
+      <header class="topbar">
+        <div class="brand-area">
+          <div class="brand">Dreamate</div>
+          <button id="modeSwitchButton" class="mode-status-button visitor" type="button" aria-label="切换管理员模式">
+            <span id="modeStatusText">访客模式</span>
+          </button>
+        </div>
+        <nav class="top-tabs" aria-label="顶部导航">
+          <button class="top-tab active" type="button">个人画布</button>
+          <button id="contactButton" class="top-tab" type="button">联系我</button>
+          <button id="pdfButton" class="top-tab" type="button">获取PDF</button>
+        </nav>
+        <div class="top-actions">
+          <button id="likeButton" class="chip-button like-button" type="button" aria-label="点赞">
+            <span class="like-icon-frame"><img id="likeIcon" src="./assets/figma/like-off.svg" alt="" /></span>
+            <span id="likeCount" class="like-count">0</span>
+          </button>
+          <button id="messageButton" class="chip-button" type="button" aria-label="留言">
+            <img src="./assets/figma/comment-latest.svg" alt="" />
+            <span>留言</span>
+          </button>
+          <button id="viewMessagesButton" class="chip-button admin-only" type="button" aria-label="查看留言">
+            <span>查看留言</span>
+          </button>
+          <button id="saveDefaultCanvasButton" class="chip-button admin-only save-canvas-button" type="button" aria-label="保存默认画布">
+            <span id="saveDefaultCanvasText">保存</span>
+          </button>
+        </div>
+        <div id="topLoadingBar" class="top-loading-bar" aria-hidden="true"><span></span></div>
+      </header>
+
+      <aside class="page-panel" aria-label="页面导航">
+        <div class="panel-title">
+          <span>Page</span>
+          <button id="addPageButton" class="icon-only" type="button" aria-label="新增页面">
+            <img src="./assets/figma/add.svg" alt="" />
+          </button>
+        </div>
+        <div id="pageList" class="page-list"></div>
+      </aside>
+
+      <aside class="minimap-panel" aria-label="小地图">
+        <div class="panel-title minimap-title"><span>Minimap</span><span id="zoomLabel">Now: 100%</span></div>
+        <div id="minimap" class="minimap">
+          <div id="minimapBlocks"></div>
+          <div id="minimapViewport" class="minimap-viewport"></div>
+        </div>
+      </aside>
+
+      <footer class="bottom-toolbar" aria-label="画布工具栏">
+        <div class="tool-row">
+          <div class="tool-group">
+            <div class="mode-switch">
+              <button class="tool-button active" data-tool="select" type="button" aria-label="选择模式">
+                <img src="./assets/figma/tool-select-active.svg" alt="" />
+              </button>
+              <button id="modeMenuButton" class="tool-caret" type="button" aria-label="选择抓手模式">
+                <img src="./assets/figma/tool-caret-latest.svg" alt="" />
+              </button>
+            </div>
+            <div id="modeMenu" class="floating-menu compact">
+              <button data-tool-choice="select" type="button">选择模式</button>
+              <button data-tool-choice="hand" type="button">抓手模式</button>
+            </div>
+            <button id="addBlockButton" class="tool-button" type="button" aria-label="添加模块">
+              <img src="./assets/figma/tool-add.svg" alt="" />
+            </button>
+            <button class="tool-button" data-tool="connect" type="button" aria-label="连线模式">
+              <img src="./assets/figma/tool-connect.svg" alt="" />
+            </button>
+            <button id="undoButton" class="tool-button" type="button" aria-label="撤回">
+              <img src="./assets/figma/tool-undo.svg" alt="" />
+            </button>
+            <div id="addMenu" class="floating-menu">
+              <button data-add-type="note" type="button">便利贴</button>
+              <button data-add-type="image" type="button">图片</button>
+              <button data-add-type="text" type="button">文本框</button>
+              <button data-add-type="link" type="button">链接卡</button>
+            </div>
+          </div>
+          <img class="toolbar-divider" src="./assets/figma/toolbar-divider.svg" alt="" />
+          <div class="tool-group">
+            <button class="tool-button" data-tool="zoom" type="button" aria-label="缩放模式">
+              <img src="./assets/figma/tool-zoom.svg" alt="" />
+            </button>
+            <button id="fitButton" class="tool-button" type="button" aria-label="内容适应">
+              <img src="./assets/figma/tool-fit.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div id="horizontalScrollbar" class="canvas-scrollbar horizontal"><span></span></div>
+      </footer>
+      <div id="verticalScrollbar" class="canvas-scrollbar vertical"><span></span></div>
+      <div id="selectionBox" class="selection-box"></div>
+      <div id="multiActions" class="multi-actions">
+        <button data-multi-action="delete" type="button">删除</button>
+        <button data-multi-action="group" type="button">编组</button>
+      </div>
+      <button id="pageGroupAction" class="page-group-action" type="button">组合</button>
+    </main>
+
+    <div id="confirmDialog" class="confirm-backdrop" aria-hidden="true">
+      <div class="confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+        <p id="confirmTitle">不再多了解我一些吗？稍后可以撤销删除</p>
+        <div class="confirm-actions">
+          <button id="cancelDeletePage" type="button">手滑了</button>
+          <button id="confirmDeletePage" type="button">我很确定</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="adminAuthDialog" class="admin-auth-backdrop" aria-hidden="true">
+      <div class="admin-auth-dialog" role="dialog" aria-modal="true" aria-labelledby="adminAuthTitle">
+        <h2 id="adminAuthTitle">我想验证身份</h2>
+        <label class="admin-password-field" for="adminPasswordInput">
+          <span>密码</span>
+          <span class="admin-password-box">
+            <input id="adminPasswordInput" type="password" autocomplete="current-password" />
+            <button id="toggleAdminPassword" class="password-visibility-button" type="button" aria-label="显示密码">
+              <svg class="password-eye eye-open" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <svg class="password-eye eye-closed" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 3l18 18"></path>
+                <path d="M10.6 5.2A10 10 0 0 1 12 5c6 0 9.5 7 9.5 7a17 17 0 0 1-3 3.8"></path>
+                <path d="M6.5 6.8A17 17 0 0 0 2.5 12s3.5 7 9.5 7a9 9 0 0 0 4.1-.9"></path>
+                <path d="M9.9 9.9A3 3 0 0 0 14.1 14"></path>
+              </svg>
+            </button>
+          </span>
+        </label>
+        <p id="adminAuthMessage" class="admin-auth-message" aria-live="polite"></p>
+        <div class="confirm-actions admin-auth-actions">
+          <button id="cancelAdminAuth" type="button">手滑了</button>
+          <button id="submitAdminAuth" type="button">进入管理员</button>
+        </div>
+      </div>
+    </div>
+    <div id="contactDialog" class="contact-backdrop" aria-hidden="true" tabindex="-1">
+      <div class="contact-dialog" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+        <h2 id="contactTitle">非常期待与你沟通~</h2>
+        <div class="contact-dialog-body">
+          <div class="contact-list">
+            <div class="contact-item">
+              <img src="./assets/figma/contact-mail.svg" alt="" />
+              <span>Yitao_0228@163.com</span>
+            </div>
+            <div class="contact-item">
+              <img src="./assets/figma/contact-phone.svg" alt="" />
+              <span>19357629233</span>
+            </div>
+            <div class="contact-item">
+              <img src="./assets/figma/contact-wechat.svg" alt="" />
+              <span>Jiangyitao_888</span>
+            </div>
+          </div>
+          <div class="contact-qr">
+            <img src="./assets/figma/contact-qr.png" alt="微信二维码" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="messageDialog" class="message-backdrop" aria-hidden="true" tabindex="-1">
+      <div class="message-dialog" role="dialog" aria-modal="true" aria-labelledby="messageTitle">
+        <h2 id="messageTitle">想听听你的声音</h2>
+        <textarea id="messageInput" placeholder="留下你想对我说的话或对该网站的建议，我会因你变得更好^^"></textarea>
+        <p id="messageStatus" class="message-status" aria-live="polite"></p>
+        <div class="confirm-actions message-actions">
+          <button id="cancelMessage" type="button">手滑了</button>
+          <button id="sendMessage" type="button">发送</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="messageListDialog" class="message-list-backdrop" aria-hidden="true" tabindex="-1">
+      <div class="message-list-dialog" role="dialog" aria-modal="true" aria-labelledby="messageListTitle">
+        <h2 id="messageListTitle">留言列表</h2>
+        <div id="messageList" class="message-list"></div>
+      </div>
+    </div>
+
+    <div id="messageToast" class="message-toast" aria-hidden="true">
+      <button id="closeMessageToast" class="message-toast-close" type="button" aria-label="关闭留言播报">×</button>
+      <div id="messageToastText" class="message-toast-text"></div>
+    </div>
+
+    <div id="globalToast" class="global-toast" aria-hidden="true"></div>
+
+    <div id="pdfDialog" class="pdf-backdrop" aria-hidden="true" tabindex="-1">
+      <div class="pdf-dialog" role="dialog" aria-modal="true" aria-label="附件预览窗">
+        <div class="pdf-dialog-header">
+          <div class="pdf-tabs" aria-label="附件类型">
+            <button id="portfolioPdfTab" class="pdf-tab active" type="button" data-pdf-kind="portfolio">作品集</button>
+            <button id="resumePdfTab" class="pdf-tab" type="button" data-pdf-kind="resume">简历</button>
+          </div>
+          <div class="pdf-actions">
+            <span>上一次更新：2026-05-17</span>
+            <a id="pdfDownloadLink" class="pdf-download" href="./assets/获取PDF/作品集_UIUX_蒋翊涛_19357629233.pdf" download>点击下载</a>
+          </div>
+        </div>
+        <div id="pdfPreviewBody" class="pdf-preview-body">
+          <div id="pdfPreviewArea" class="pdf-preview-area portfolio-preview">
+          </div>
+        </div>
+      </div>
+    </div>
+    <input id="imageInput" class="visually-hidden" type="file" accept="image/*" />
+    <input id="pdfInput" class="visually-hidden" type="file" accept="application/pdf,.pdf" />
+    <input id="htmlInput" class="visually-hidden" type="file" accept="text/html,.html,.htm" />
+
+    <script src="./assets/lottie.min.js"></script>
+    <script src="./assets/loading-title-animation-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

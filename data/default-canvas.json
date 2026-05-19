@@ -1,0 +1,2472 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "id": "first",
+      "title": "初遇",
+      "kind": "page",
+      "icon": "nav-default.svg",
+      "activeIcon": "nav-default-active.svg"
+    },
+    {
+      "id": "works",
+      "title": "作品探索",
+      "kind": "group",
+      "icon": "nav-default.svg",
+      "activeIcon": "nav-default-active.svg",
+      "expanded": true
+    },
+    {
+      "id": "netease",
+      "title": "网易知数",
+      "kind": "child",
+      "parent": "works",
+      "icon": "nav-netease.svg",
+      "activeIcon": "nav-netease.svg"
+    },
+    {
+      "id": "jinbao",
+      "title": "金保通",
+      "kind": "child",
+      "parent": "works",
+      "icon": "nav-jinbao.svg",
+      "activeIcon": "nav-jinbao.svg"
+    },
+    {
+      "id": "wallet",
+      "title": "钱包-加油频道",
+      "kind": "child",
+      "parent": "works",
+      "icon": "nav-wallet.svg",
+      "activeIcon": "nav-wallet.svg"
+    },
+    {
+      "id": "notes",
+      "title": "沉淀小记",
+      "kind": "page",
+      "icon": "nav-default.svg",
+      "activeIcon": "nav-default-active.svg"
+    }
+  ],
+  "activePage": "first",
+  "blocks": [
+    {
+      "id": "block-1778936953573-4593",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 544,
+      "y": -256,
+      "elements": [
+        {
+          "id": "el-1778936953573-2784",
+          "type": "title",
+          "text": "Hi，这里是「蒋翊涛」的个人网站",
+          "manualSize": true,
+          "width": 442,
+          "height": 35
+        },
+        {
+          "id": "el-1778936953573-921",
+          "type": "text",
+          "text": "从画布开始了解我 →",
+          "manualSize": true,
+          "width": 442,
+          "height": 30
+        },
+        {
+          "id": "el-1778937108656-4535",
+          "type": "text",
+          "text": "",
+          "manualSize": true,
+          "width": 442,
+          "height": 30
+        },
+        {
+          "id": "el-1778936966452-3568",
+          "type": "image",
+          "src": "uploads/canvas-1778936977117-872cfd9f.png",
+          "intrinsicWidth": 1162,
+          "intrinsicHeight": 1920,
+          "width": 264,
+          "height": 437,
+          "manualSize": true
+        }
+      ],
+      "width": 544,
+      "height": 784,
+      "className": "note-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778938449173-922",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 2240,
+      "y": -16,
+      "elements": [
+        {
+          "id": "el-1778938449173-2698",
+          "type": "title",
+          "text": "👔 我已经有哪些实习经验",
+          "manualSize": true,
+          "width": 346,
+          "height": 35
+        },
+        {
+          "id": "el-1778938449173-133",
+          "type": "text",
+          "text": "25年夏、26年春，我分别在 小米 & 网易 实习",
+          "width": 346,
+          "manualSize": false,
+          "height": 30
+        },
+        {
+          "id": "el-1778964585398-244",
+          "type": "text",
+          "text": "小米的时光，我加入了小而美的设计团队，支持集团金融相关产品设计，B/C端都广泛参与。",
+          "manualSize": false,
+          "width": 346,
+          "height": 51
+        },
+        {
+          "id": "el-1778964633336-9294",
+          "type": "text",
+          "text": "26年初，我加入网易智企的Agent项目组，跟随超强带教，我的沟通协作等综合能力，对产品的交互细节考量程度，都得到了进一步提升",
+          "manualSize": false,
+          "width": 346,
+          "height": 73
+        }
+      ],
+      "width": 384,
+      "height": 304,
+      "className": "text-card",
+      "children": []
+    },
+    {
+      "id": "group-1778940645009-4685",
+      "page": "first",
+      "type": "group",
+      "className": "",
+      "x": 2240,
+      "y": 736,
+      "width": 385,
+      "height": 497,
+      "children": [
+        "block-1778938656138-2695",
+        "block-1778938687982-1518"
+      ],
+      "elements": []
+    },
+    {
+      "id": "block-1778938656138-2695",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 16,
+      "y": 16,
+      "elements": [
+        {
+          "id": "el-1778938656138-6115",
+          "type": "title",
+          "text": "原型与高保真产出",
+          "manualSize": true,
+          "width": 266,
+          "height": 35
+        },
+        {
+          "id": "el-1778938656138-4390",
+          "type": "text",
+          "text": "我对“Figma”与同类软件具有极高熟练度，在两段实习中均有设计系统规范迭代经验，能够合理运用Auto layout和变体功能绘制\n组件或高保真页面",
+          "manualSize": false,
+          "width": 266,
+          "height": 95
+        },
+        {
+          "id": "el-1778940489362-4050",
+          "type": "text",
+          "text": "原型对接/绘制方面：在工作中产品原型以Axure为主，同时我也自学了Axure的基础\n操作，适应不同团队的交互稿工具要求",
+          "manualSize": false,
+          "width": 266,
+          "height": 95
+        }
+      ],
+      "width": 352,
+      "height": 304,
+      "className": "text-card",
+      "children": [],
+      "parentGroup": "group-1778940645009-4685"
+    },
+    {
+      "id": "block-1778938687982-1518",
+      "page": "first",
+      "type": "card",
+      "layout": "horizontal",
+      "autoSize": true,
+      "x": 16,
+      "y": 336,
+      "elements": [
+        {
+          "id": "el-1778938687982-1068",
+          "type": "image",
+          "src": "uploads/canvas-1778938817553-121db112.png",
+          "intrinsicWidth": 224,
+          "intrinsicHeight": 224,
+          "width": 101,
+          "height": 101,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778938840319-9966",
+          "type": "image",
+          "src": "uploads/canvas-1778938845415-1d16320c.png",
+          "intrinsicWidth": 224,
+          "intrinsicHeight": 224,
+          "width": 101,
+          "height": 101,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778938820866-3670",
+          "type": "image",
+          "src": "uploads/canvas-1778938837439-4cf74d61.png",
+          "intrinsicWidth": 224,
+          "intrinsicHeight": 224,
+          "width": 101,
+          "height": 101,
+          "manualSize": true
+        }
+      ],
+      "width": 352,
+      "height": 144,
+      "className": "image-placeholder-card",
+      "children": [],
+      "parentGroup": "group-1778940645009-4685"
+    },
+    {
+      "id": "copy-1778941043355-4027",
+      "page": "first",
+      "type": "group",
+      "className": "",
+      "x": 2832,
+      "y": 736,
+      "width": 385,
+      "height": 497,
+      "children": [
+        "copy-1778941043355-5462",
+        "copy-1778941043355-2666"
+      ],
+      "elements": []
+    },
+    {
+      "id": "copy-1778941043355-5462",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 16,
+      "y": 16,
+      "elements": [
+        {
+          "id": "el-1778941043355-6178",
+          "type": "title",
+          "text": "AI 赋能业务",
+          "manualSize": true,
+          "width": 426,
+          "height": 35
+        },
+        {
+          "id": "el-1778941043355-2843",
+          "type": "text",
+          "text": "随“龙虾”与“Vibe coding”大热，我看到设计师职能拓展的可能性",
+          "manualSize": true,
+          "width": 426,
+          "height": 30
+        },
+        {
+          "id": "el-1778941043355-6749",
+          "type": "text",
+          "text": "目前最常用的coding工具是Codex，并且在「知数」AI微动效探索、设计走查skill测试等真实业务场景中进行运用",
+          "manualSize": true,
+          "width": 426,
+          "height": 51
+        },
+        {
+          "id": "el-1778942112930-2838",
+          "type": "text",
+          "text": "在业余时间，我会使用IDE+CC+国产模型，进行一些轻量化产品的实现",
+          "width": 426,
+          "height": 30,
+          "manualSize": false
+        }
+      ],
+      "width": 352,
+      "height": 304,
+      "className": "text-card",
+      "children": [],
+      "parentGroup": "copy-1778941043355-4027"
+    },
+    {
+      "id": "copy-1778941043355-2666",
+      "page": "first",
+      "type": "card",
+      "layout": "horizontal",
+      "autoSize": true,
+      "x": 16,
+      "y": 336,
+      "elements": [
+        {
+          "id": "el-1778941043355-5192",
+          "type": "image",
+          "src": "uploads/canvas-1778941054137-bd77170a.png",
+          "intrinsicWidth": 224,
+          "intrinsicHeight": 224,
+          "width": 101,
+          "height": 101,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778941043355-9007",
+          "type": "image",
+          "src": "uploads/canvas-1778941058073-55ff9302.png",
+          "intrinsicWidth": 224,
+          "intrinsicHeight": 224,
+          "width": 101,
+          "height": 101,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778941043355-6879",
+          "type": "image",
+          "src": "uploads/canvas-1778941061511-f3b58b81.png",
+          "intrinsicWidth": 224,
+          "intrinsicHeight": 224,
+          "width": 101,
+          "height": 101,
+          "manualSize": true
+        }
+      ],
+      "width": 352,
+      "height": 144,
+      "className": "image-placeholder-card",
+      "children": [],
+      "parentGroup": "copy-1778941043355-4027"
+    },
+    {
+      "id": "copy-1778941135417-6358",
+      "page": "first",
+      "type": "group",
+      "className": "",
+      "x": 3456,
+      "y": 736,
+      "width": 385,
+      "height": 497,
+      "children": [
+        "copy-1778941135417-6712",
+        "copy-1778941135417-6405"
+      ],
+      "elements": []
+    },
+    {
+      "id": "copy-1778941135417-6712",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 16,
+      "y": 16,
+      "elements": [
+        {
+          "id": "el-1778941135417-485",
+          "type": "title",
+          "text": "AI 绘图",
+          "manualSize": true,
+          "width": 282,
+          "height": 35
+        },
+        {
+          "id": "el-1778941135417-9193",
+          "type": "text",
+          "text": "在AIGC生图领域诞生时，我对Midjourney和SD的web UI、comfy UI 均有一定体验并产出了相关高质量的设计素材与图像",
+          "manualSize": true,
+          "width": 282,
+          "height": 73
+        },
+        {
+          "id": "el-1778941135417-8996",
+          "type": "text",
+          "text": "随更多平台与交互的出现，很长一段时间我采用即梦进行绘图，并有基础的工作流沉淀",
+          "manualSize": false,
+          "width": 282,
+          "height": 73
+        },
+        {
+          "id": "el-1778941622565-5615",
+          "type": "text",
+          "text": "我仍在拓展新工具，例如综合Lovart等智能体，banana、image-2等模型",
+          "width": 282,
+          "height": 30,
+          "manualSize": false
+        }
+      ],
+      "width": 352,
+      "height": 304,
+      "className": "text-card",
+      "children": [],
+      "parentGroup": "copy-1778941135417-6358"
+    },
+    {
+      "id": "copy-1778941135417-6405",
+      "page": "first",
+      "type": "card",
+      "layout": "horizontal",
+      "autoSize": true,
+      "x": 16,
+      "y": 336,
+      "elements": [
+        {
+          "id": "el-1778941135417-1072",
+          "type": "image",
+          "src": "uploads/canvas-1778941157254-6c05d6d1.png",
+          "intrinsicWidth": 224,
+          "intrinsicHeight": 224,
+          "width": 101,
+          "height": 101,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778941135417-981",
+          "type": "image",
+          "src": "uploads/canvas-1778941165500-cd6aa9f4.png",
+          "intrinsicWidth": 224,
+          "intrinsicHeight": 224,
+          "width": 101,
+          "height": 101,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778941135417-7968",
+          "type": "image",
+          "src": "uploads/canvas-1778941168697-679fb0cf.png",
+          "intrinsicWidth": 224,
+          "intrinsicHeight": 224,
+          "width": 101,
+          "height": 101,
+          "manualSize": true
+        }
+      ],
+      "width": 352,
+      "height": 144,
+      "className": "image-placeholder-card",
+      "children": [],
+      "parentGroup": "copy-1778941135417-6358"
+    },
+    {
+      "id": "copy-1778941279172-6901",
+      "page": "first",
+      "type": "group",
+      "className": "",
+      "x": 4080,
+      "y": 736,
+      "width": 385,
+      "height": 497,
+      "children": [
+        "copy-1778941279172-2287",
+        "copy-1778941279172-4824"
+      ],
+      "elements": []
+    },
+    {
+      "id": "copy-1778941279172-2287",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 16,
+      "y": 16,
+      "elements": [
+        {
+          "id": "el-1778941279172-7125",
+          "type": "title",
+          "text": "个人提升与沉淀复盘",
+          "manualSize": false,
+          "width": 266,
+          "height": 35
+        },
+        {
+          "id": "el-1778941279172-5636",
+          "type": "text",
+          "text": "我每天会花一定时间浏览设计网站，了解趋势与积累可用素材，审美先行。选用工具是Eagle，可以方便地管理甚至自动化",
+          "manualSize": false,
+          "width": 266,
+          "height": 95
+        },
+        {
+          "id": "el-1778941279172-6545",
+          "type": "text",
+          "text": "一段经历的落幕代表着另一段的新生，复盘是求知路上重要的一环。每一次成长，我都习惯记录到我的飞书云空间中。",
+          "manualSize": false,
+          "width": 266,
+          "height": 95
+        }
+      ],
+      "width": 352,
+      "height": 304,
+      "className": "text-card",
+      "children": [],
+      "parentGroup": "copy-1778941279172-6901"
+    },
+    {
+      "id": "copy-1778941279172-4824",
+      "page": "first",
+      "type": "card",
+      "layout": "horizontal",
+      "autoSize": true,
+      "x": 16,
+      "y": 336,
+      "elements": [
+        {
+          "id": "el-1778941279172-5725",
+          "type": "image",
+          "src": "uploads/canvas-1778942484746-619bbb26.png",
+          "intrinsicWidth": 224,
+          "intrinsicHeight": 224,
+          "width": 101,
+          "height": 101,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778941279172-5256",
+          "type": "image",
+          "src": "uploads/canvas-1778942479840-c05c012c.png",
+          "intrinsicWidth": 224,
+          "intrinsicHeight": 224,
+          "width": 101,
+          "height": 101,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778942575110-6413",
+          "type": "image",
+          "src": "uploads/canvas-1778942579313-85a876d2.png",
+          "intrinsicWidth": 224,
+          "intrinsicHeight": 224,
+          "width": 101,
+          "height": 101,
+          "manualSize": true
+        }
+      ],
+      "width": 352,
+      "height": 144,
+      "className": "image-placeholder-card",
+      "children": [],
+      "parentGroup": "copy-1778941279172-6901"
+    },
+    {
+      "id": "group-1778965687140-7207",
+      "page": "first",
+      "type": "group",
+      "className": "",
+      "x": 2832,
+      "y": -128,
+      "width": 528,
+      "height": 192,
+      "children": [
+        "block-1778965535675-3618",
+        "block-1778965671554-8064"
+      ],
+      "autoSize": false,
+      "elements": []
+    },
+    {
+      "id": "block-1778965535675-3618",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 352,
+      "y": 32,
+      "elements": [
+        {
+          "id": "el-1778965535675-8609",
+          "type": "image",
+          "src": "uploads/canvas-1778965995955-90c68f7f.png",
+          "intrinsicWidth": 290,
+          "intrinsicHeight": 144,
+          "width": 126,
+          "height": 63,
+          "manualSize": true
+        }
+      ],
+      "width": 160,
+      "height": 96,
+      "className": "image-placeholder-card",
+      "parentGroup": "group-1778965687140-7207",
+      "hideBackground": true,
+      "children": []
+    },
+    {
+      "id": "block-1778965671554-8064",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 16,
+      "y": 16,
+      "elements": [
+        {
+          "id": "el-1778965671554-8239",
+          "type": "title",
+          "text": "网易（杭州）网络有限公司",
+          "manualSize": true,
+          "width": 250,
+          "height": 35
+        },
+        {
+          "id": "el-1778965671554-2445",
+          "type": "text",
+          "text": "智企事业群  -  交互设计实习生",
+          "manualSize": true,
+          "width": 250,
+          "height": 30
+        }
+      ],
+      "width": 320,
+      "height": 144,
+      "className": "text-card",
+      "parentGroup": "group-1778965687140-7207",
+      "children": [],
+      "hideBackground": true
+    },
+    {
+      "id": "group-1778965881153-8577",
+      "page": "first",
+      "type": "group",
+      "className": "",
+      "x": 2832,
+      "y": 160,
+      "width": 528,
+      "height": 224,
+      "children": [
+        "block-1778965852658-7279",
+        "block-1778965872435-3934"
+      ],
+      "elements": [],
+      "autoSize": false
+    },
+    {
+      "id": "block-1778965852658-7279",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 400,
+      "y": 48,
+      "elements": [
+        {
+          "id": "el-1778965852658-875",
+          "type": "image",
+          "src": "uploads/canvas-1778966005626-30c5e95d.png",
+          "intrinsicWidth": 144,
+          "intrinsicHeight": 144,
+          "width": 78,
+          "height": 78,
+          "manualSize": true
+        }
+      ],
+      "width": 112,
+      "height": 112,
+      "className": "image-placeholder-card",
+      "parentGroup": "group-1778965881153-8577",
+      "children": [],
+      "hideBackground": true
+    },
+    {
+      "id": "block-1778965872435-3934",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 16,
+      "y": 32,
+      "elements": [
+        {
+          "id": "el-1778965872435-7028",
+          "type": "title",
+          "text": "北京小米移动软件有限公司",
+          "manualSize": true,
+          "width": 1258,
+          "height": 35
+        },
+        {
+          "id": "el-1778965872435-104",
+          "type": "text",
+          "text": "天星数科  -  UX设计实习生",
+          "manualSize": true,
+          "width": 1258,
+          "height": 30
+        }
+      ],
+      "width": 320,
+      "height": 144,
+      "className": "text-card",
+      "parentGroup": "group-1778965881153-8577",
+      "hideBackground": true,
+      "children": []
+    },
+    {
+      "id": "group-1778967570408-9042",
+      "page": "first",
+      "type": "group",
+      "className": "",
+      "x": 2240,
+      "y": -928,
+      "width": 641,
+      "height": 193,
+      "children": [
+        "block-1778966755672-9344",
+        "block-1778966833338-7375"
+      ],
+      "elements": []
+    },
+    {
+      "id": "block-1778966755672-9344",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 128,
+      "y": 16,
+      "elements": [
+        {
+          "id": "el-1778966755672-1539",
+          "type": "title",
+          "text": "国A类丨第17届 全国大学生广告艺术大赛",
+          "manualSize": false,
+          "width": 378,
+          "height": 35
+        },
+        {
+          "id": "el-1778966755672-6639",
+          "type": "text",
+          "text": "UI类国家级一等奖，独立参赛完成「中国联通青少年专区改版」的所有设计，广泛应用AIGC元素进行风格化探索",
+          "manualSize": false,
+          "width": 378,
+          "height": 51
+        }
+      ],
+      "width": 496,
+      "height": 160,
+      "className": "text-card",
+      "children": [],
+      "parentGroup": "group-1778967570408-9042",
+      "hideBackground": true
+    },
+    {
+      "id": "block-1778966833338-7375",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 16,
+      "y": 32,
+      "elements": [
+        {
+          "id": "el-1778966833338-2715",
+          "type": "image",
+          "src": "uploads/canvas-1778966837309-cc028835.png",
+          "intrinsicWidth": 360,
+          "intrinsicHeight": 360,
+          "width": 94,
+          "height": 94,
+          "manualSize": true
+        }
+      ],
+      "width": 128,
+      "height": 128,
+      "className": "image-placeholder-card",
+      "children": [],
+      "parentGroup": "group-1778967570408-9042",
+      "hideBackground": true
+    },
+    {
+      "id": "group-1778967576622-4812",
+      "page": "first",
+      "type": "group",
+      "className": "",
+      "x": 3040,
+      "y": -672,
+      "width": 641,
+      "height": 193,
+      "children": [
+        "copy-1778966861752-9070",
+        "copy-1778967083965-6661"
+      ],
+      "elements": []
+    },
+    {
+      "id": "copy-1778966861752-9070",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 16,
+      "y": 32,
+      "elements": [
+        {
+          "id": "el-1778966861753-8955",
+          "type": "image",
+          "src": "uploads/canvas-1778966870543-7c7a75db.png",
+          "intrinsicWidth": 360,
+          "intrinsicHeight": 360,
+          "width": 94,
+          "height": 94,
+          "manualSize": true
+        }
+      ],
+      "width": 128,
+      "height": 128,
+      "className": "image-placeholder-card",
+      "children": [],
+      "parentGroup": "group-1778967576622-4812",
+      "hideBackground": true
+    },
+    {
+      "id": "group-1778967579431-7710",
+      "page": "first",
+      "type": "group",
+      "className": "",
+      "x": 3824,
+      "y": -672,
+      "width": 641,
+      "height": 193,
+      "children": [
+        "copy-1778966862113-6339",
+        "copy-1778967433492-2209"
+      ],
+      "elements": []
+    },
+    {
+      "id": "copy-1778966862113-6339",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 16,
+      "y": 32,
+      "elements": [
+        {
+          "id": "el-1778966862113-9797",
+          "type": "image",
+          "src": "uploads/canvas-1778966867007-336f04be.png",
+          "intrinsicWidth": 360,
+          "intrinsicHeight": 360,
+          "width": 94,
+          "height": 94,
+          "manualSize": true
+        }
+      ],
+      "width": 128,
+      "height": 128,
+      "className": "image-placeholder-card",
+      "children": [],
+      "parentGroup": "group-1778967579431-7710",
+      "hideBackground": true
+    },
+    {
+      "id": "group-1778967572706-2045",
+      "page": "first",
+      "type": "group",
+      "className": "",
+      "x": 2240,
+      "y": -672,
+      "width": 641,
+      "height": 193,
+      "children": [
+        "copy-1778966877435-3489",
+        "copy-1778967132199-2108"
+      ],
+      "elements": []
+    },
+    {
+      "id": "copy-1778966877435-3489",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 128,
+      "y": 16,
+      "elements": [
+        {
+          "id": "el-1778966877435-8465",
+          "type": "title",
+          "text": "国A类丨2024“建行杯”国际大学生创新大赛",
+          "manualSize": false,
+          "width": 458,
+          "height": 35
+        },
+        {
+          "id": "el-1778966877435-5486",
+          "type": "text",
+          "text": "国家级银奖，项目名称「陶金固连」，我作为PPT内容组负责人，\n带领同学迭代10余轮，从省赛一路过关斩将闯进国赛\n",
+          "manualSize": true,
+          "width": 458,
+          "height": 51
+        }
+      ],
+      "width": 496,
+      "height": 160,
+      "className": "text-card",
+      "children": [],
+      "parentGroup": "group-1778967572706-2045",
+      "hideBackground": true
+    },
+    {
+      "id": "copy-1778967083965-6661",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 128,
+      "y": 16,
+      "elements": [
+        {
+          "id": "el-1778967083965-6604",
+          "type": "title",
+          "text": "第19届 国际五金工业设计大赛“荣亚杯”",
+          "manualSize": false,
+          "width": 378,
+          "height": 35
+        },
+        {
+          "id": "el-1778967083965-7521",
+          "type": "text",
+          "text": "创意赛道银奖，奖金2w元，独立完成「模块化定制快装房」的建模渲染、版式设计、小程序交互设计等",
+          "manualSize": false,
+          "width": 378,
+          "height": 51
+        }
+      ],
+      "width": 496,
+      "height": 160,
+      "className": "text-card",
+      "children": [],
+      "parentGroup": "group-1778967576622-4812",
+      "hideBackground": true
+    },
+    {
+      "id": "copy-1778967132199-2108",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 16,
+      "y": 32,
+      "elements": [
+        {
+          "id": "el-1778967132199-2552",
+          "type": "image",
+          "src": "uploads/canvas-1778966870543-7c7a75db.png",
+          "intrinsicWidth": 360,
+          "intrinsicHeight": 360,
+          "width": 94,
+          "height": 94,
+          "manualSize": true
+        }
+      ],
+      "width": 128,
+      "height": 128,
+      "className": "image-placeholder-card",
+      "children": [],
+      "parentGroup": "group-1778967572706-2045",
+      "hideBackground": true
+    },
+    {
+      "id": "group-1778967574606-9306",
+      "page": "first",
+      "type": "group",
+      "className": "",
+      "x": 3040,
+      "y": -928,
+      "width": 641,
+      "height": 193,
+      "children": [
+        "copy-1778967144724-8984",
+        "copy-1778967185163-2667"
+      ],
+      "elements": []
+    },
+    {
+      "id": "copy-1778967144724-8984",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 128,
+      "y": 16,
+      "elements": [
+        {
+          "id": "el-1778967144724-6267",
+          "type": "title",
+          "text": "省A丨第19届 浙江省大学生工业设计竞赛",
+          "manualSize": false,
+          "width": 378,
+          "height": 35
+        },
+        {
+          "id": "el-1778967144724-5638",
+          "type": "text",
+          "text": "五金产品赛道-省级一等奖，第一作者，主导完成「果味气泡杯」的建模、渲染、打印交接、版式设计与路演汇报等工作",
+          "manualSize": false,
+          "width": 378,
+          "height": 51
+        }
+      ],
+      "width": 496,
+      "height": 160,
+      "className": "text-card",
+      "children": [],
+      "parentGroup": "group-1778967574606-9306",
+      "hideBackground": true
+    },
+    {
+      "id": "copy-1778967185163-2667",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 16,
+      "y": 32,
+      "elements": [
+        {
+          "id": "el-1778967185163-1613",
+          "type": "image",
+          "src": "uploads/canvas-1778966837309-cc028835.png",
+          "intrinsicWidth": 360,
+          "intrinsicHeight": 360,
+          "width": 94,
+          "height": 94,
+          "manualSize": true
+        }
+      ],
+      "width": 128,
+      "height": 128,
+      "className": "image-placeholder-card",
+      "children": [],
+      "parentGroup": "group-1778967574606-9306",
+      "hideBackground": true
+    },
+    {
+      "id": "group-1778967577892-5521",
+      "page": "first",
+      "type": "group",
+      "className": "",
+      "x": 3824,
+      "y": -928,
+      "width": 641,
+      "height": 193,
+      "children": [
+        "copy-1778967226078-4526",
+        "copy-1778967398361-3121"
+      ],
+      "elements": []
+    },
+    {
+      "id": "copy-1778967226078-4526",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 128,
+      "y": 16,
+      "elements": [
+        {
+          "id": "el-1778967226078-9491",
+          "type": "title",
+          "text": "省A丨第19届 浙江省大学生工业设计竞赛",
+          "manualSize": false,
+          "width": 378,
+          "height": 35
+        },
+        {
+          "id": "el-1778967226078-6433",
+          "type": "text",
+          "text": "主赛道赛道-省级一等奖，第二作者，完成产品「易晾易干」的版面设计、路演汇报文件、场景渲染等工作",
+          "manualSize": false,
+          "width": 378,
+          "height": 51
+        }
+      ],
+      "width": 496,
+      "height": 160,
+      "className": "text-card",
+      "children": [],
+      "parentGroup": "group-1778967577892-5521",
+      "hideBackground": true
+    },
+    {
+      "id": "copy-1778967398361-3121",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 16,
+      "y": 32,
+      "elements": [
+        {
+          "id": "el-1778967398361-1687",
+          "type": "image",
+          "src": "uploads/canvas-1778966837309-cc028835.png",
+          "intrinsicWidth": 360,
+          "intrinsicHeight": 360,
+          "width": 94,
+          "height": 94,
+          "manualSize": true
+        }
+      ],
+      "width": 128,
+      "height": 128,
+      "className": "image-placeholder-card",
+      "children": [],
+      "parentGroup": "group-1778967577892-5521",
+      "hideBackground": true
+    },
+    {
+      "id": "copy-1778967433492-2209",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 128,
+      "y": 16,
+      "elements": [
+        {
+          "id": "el-1778967433492-7580",
+          "type": "title",
+          "text": "省B丨NCDA 未来设计师大赛",
+          "manualSize": false,
+          "width": 378,
+          "height": 35
+        },
+        {
+          "id": "el-1778967433492-9563",
+          "type": "text",
+          "text": "省级三等奖，独立完成「三堡排涝 · 数字孪生」的产品前期构思、交互设计、版式设计",
+          "manualSize": false,
+          "width": 378,
+          "height": 51
+        }
+      ],
+      "width": 496,
+      "height": 160,
+      "className": "text-card",
+      "children": [],
+      "parentGroup": "group-1778967579431-7710",
+      "hideBackground": true
+    },
+    {
+      "id": "copy-1778970137036-2703",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": -320,
+      "y": 208,
+      "elements": [
+        {
+          "id": "el-1778970137036-8760",
+          "type": "image",
+          "src": "uploads/canvas-1778979167327-67a7cfe5.png",
+          "intrinsicWidth": 872,
+          "intrinsicHeight": 872,
+          "width": 362,
+          "height": 362,
+          "manualSize": true
+        }
+      ],
+      "width": 512,
+      "height": 416,
+      "className": "note-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778973840736-3493",
+      "page": "jinbao",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": -1680,
+      "y": -192,
+      "elements": [
+        {
+          "id": "el-1778973840736-9030",
+          "type": "image",
+          "src": "uploads/canvas-1778973860643-7b381454.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778973840736-8591",
+          "type": "image",
+          "src": "uploads/canvas-1778973863504-6f4175a1.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778973840736-9026",
+          "type": "image",
+          "src": "uploads/canvas-1778973866849-83855771.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 1616,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778973840736-7758",
+      "page": "jinbao",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": -416,
+      "y": -192,
+      "elements": [
+        {
+          "id": "el-1778973840736-8411",
+          "type": "image",
+          "src": "uploads/canvas-1778973872922-65f89cc0.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778973840736-8610",
+          "type": "image",
+          "src": "uploads/canvas-1778973878774-ecf988d2.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778973840736-5990",
+          "type": "image",
+          "src": "uploads/canvas-1778973892952-5490e482.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778973897750-9989",
+          "type": "image",
+          "src": "uploads/canvas-1778973919808-f047263b.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778973923049-3047",
+          "type": "image",
+          "src": "uploads/canvas-1778973929791-ecbb424a.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 2656,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778973840736-2416",
+      "page": "jinbao",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 832,
+      "y": -192,
+      "elements": [
+        {
+          "id": "el-1778973840736-5556",
+          "type": "image",
+          "src": "uploads/canvas-1778973965156-1d0ee0e4.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778973840736-759",
+          "type": "image",
+          "src": "uploads/canvas-1778973971922-48932492.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 1088,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778973840736-7078",
+      "page": "jinbao",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 2064,
+      "y": -192,
+      "elements": [
+        {
+          "id": "el-1778973840736-2043",
+          "type": "image",
+          "src": "uploads/canvas-1778973981870-b7cd0046.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778973840736-9279",
+          "type": "image",
+          "src": "uploads/canvas-1778973992618-2b19828e.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778973840736-5353",
+          "type": "image",
+          "src": "uploads/canvas-1778973998529-bf21d7a2.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974003214-254",
+          "type": "image",
+          "src": "uploads/canvas-1778974011723-0040dddc.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974013486-1137",
+          "type": "image",
+          "src": "uploads/canvas-1778974017762-5c968994.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 2656,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778974081410-5593",
+      "page": "jinbao",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 3280,
+      "y": -192,
+      "elements": [
+        {
+          "id": "el-1778974081410-665",
+          "type": "image",
+          "src": "uploads/canvas-1778974087797-0b4db67e.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974081410-3231",
+          "type": "image",
+          "src": "uploads/canvas-1778974092778-3e3b66c0.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 1088,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778974927353-6697",
+      "page": "netease",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": -1091.721777837527,
+      "y": 3198.884183639175,
+      "elements": [
+        {
+          "id": "el-1778974927353-6948",
+          "type": "image",
+          "src": "uploads/canvas-1778973290481-f6df8a43.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974927353-9524",
+          "type": "image",
+          "src": "uploads/canvas-1778973350905-2d1ec49b.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974927353-8058",
+          "type": "image",
+          "src": "uploads/canvas-1778973358773-dd11f4c0.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 1616,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778974927353-3893",
+      "page": "netease",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 172.27822216247296,
+      "y": 3198.884183639175,
+      "elements": [
+        {
+          "id": "el-1778974927353-2603",
+          "type": "image",
+          "src": "uploads/canvas-1778973643552-d014a662.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974927353-7813",
+          "type": "image",
+          "src": "uploads/canvas-1778973647187-e6518dbc.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974927353-1679",
+          "type": "image",
+          "src": "uploads/canvas-1778973650650-e953e26e.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 1616,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778974927353-7235",
+      "page": "netease",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 1420.278222162473,
+      "y": 3198.884183639175,
+      "elements": [
+        {
+          "id": "el-1778974927353-5717",
+          "type": "image",
+          "src": "uploads/canvas-1778973674263-81239cf5.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974927353-2106",
+          "type": "image",
+          "src": "uploads/canvas-1778973677335-c9a784ff.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 1088,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778974927353-1094",
+      "page": "netease",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 2652.278222162473,
+      "y": 3198.884183639175,
+      "elements": [
+        {
+          "id": "el-1778974927353-1690",
+          "type": "image",
+          "src": "uploads/canvas-1778973686671-cfe703f9.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974927353-5544",
+          "type": "image",
+          "src": "uploads/canvas-1778973690238-25106a1e.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974927353-1525",
+          "type": "image",
+          "src": "uploads/canvas-1778973693422-a6d189b3.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 1616,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778974927353-7375",
+      "page": "netease",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 3868.278222162473,
+      "y": 3198.884183639175,
+      "elements": [
+        {
+          "id": "el-1778974927353-3364",
+          "type": "image",
+          "src": "uploads/canvas-1778973717603-d0d816f4.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 560,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778974935438-761",
+      "page": "wallet",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": -575.3321234119785,
+      "y": -470.2232304900183,
+      "elements": [
+        {
+          "id": "el-1778974935439-2229",
+          "type": "image",
+          "src": "uploads/canvas-1778974604804-6bc5f88b.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974935439-4605",
+          "type": "image",
+          "src": "uploads/canvas-1778974608272-37d2d0a7.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 1088,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778974935438-767",
+      "page": "wallet",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 688.6678765880215,
+      "y": -470.2232304900183,
+      "elements": [
+        {
+          "id": "el-1778974935439-9810",
+          "type": "image",
+          "src": "uploads/canvas-1778974644253-970562f7.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974935439-8201",
+          "type": "image",
+          "src": "uploads/canvas-1778974647093-2335d722.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 1088,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778974935438-2756",
+      "page": "wallet",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 3168.6678765880215,
+      "y": -470.2232304900183,
+      "elements": [
+        {
+          "id": "el-1778974935439-4134",
+          "type": "image",
+          "src": "uploads/canvas-1778974700951-0ab575b8.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 560,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778974935438-7908",
+      "page": "wallet",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": -1823.3321234119785,
+      "y": -470.2232304900183,
+      "elements": [
+        {
+          "id": "el-1778974935439-8246",
+          "type": "image",
+          "src": "uploads/canvas-1778974207313-f61df5cc.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974935439-2542",
+          "type": "image",
+          "src": "uploads/canvas-1778974210739-cd43f0fe.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974935439-3134",
+          "type": "image",
+          "src": "uploads/canvas-1778974214284-b51beb86.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974935439-2856",
+          "type": "image",
+          "src": "uploads/canvas-1778974217560-3e981c8c.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 921,
+          "height": 518,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 2128,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778974935439-9566",
+      "page": "wallet",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 1936.6678765880215,
+      "y": -470.2232304900183,
+      "elements": [
+        {
+          "id": "el-1778974935439-4323",
+          "type": "image",
+          "src": "uploads/canvas-1778974670995-b8f0ba59.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974935439-5731",
+          "type": "image",
+          "src": "uploads/canvas-1778974673895-6c623769.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778974935439-6793",
+          "type": "image",
+          "src": "uploads/canvas-1778974676779-a75a3230.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 928,
+          "height": 522,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 1616,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "block-1778975051119-9868",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 1488,
+      "y": -816,
+      "elements": [
+        {
+          "id": "el-1778975051119-572",
+          "type": "title",
+          "text": "🏫 我的校园经历",
+          "manualSize": true,
+          "width": 522,
+          "height": 35
+        },
+        {
+          "id": "el-1778975051119-7270",
+          "type": "text",
+          "text": "我来自「浙江科技大学」的工业设计专业-信息体验方向。",
+          "width": 522,
+          "manualSize": true,
+          "height": 30
+        },
+        {
+          "id": "el-1778975059978-4417",
+          "type": "text",
+          "text": "大二下学期，我加入了和山工作室，参与数次智能硬件交互设计与版式设计",
+          "manualSize": true,
+          "width": 522,
+          "height": 30
+        },
+        {
+          "id": "el-1778975061348-9278",
+          "type": "text",
+          "text": "小和山下、西蜜湖畔，每一处草木 都能见证我向上生长的四年",
+          "manualSize": true,
+          "width": 522,
+          "height": 30
+        }
+      ],
+      "width": 544,
+      "height": 208,
+      "className": "note-card",
+      "children": []
+    },
+    {
+      "id": "block-1778975092054-5726",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 1488,
+      "y": 64,
+      "elements": [
+        {
+          "id": "el-1778975092054-9836",
+          "type": "title",
+          "text": "🧠 视觉为基，剑指「体验交互」",
+          "manualSize": true,
+          "width": 474,
+          "height": 35
+        },
+        {
+          "id": "el-1778975092054-568",
+          "type": "text",
+          "text": "我在找这些岗位：产品设计师、用户体验设计师、交互设计师、UI设计师...",
+          "manualSize": true,
+          "width": 474,
+          "height": 30
+        }
+      ],
+      "width": 544,
+      "height": 144,
+      "className": "note-card",
+      "children": []
+    },
+    {
+      "id": "block-1778975112569-2576",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 1488,
+      "y": 912,
+      "elements": [
+        {
+          "id": "el-1778975112569-9382",
+          "type": "title",
+          "text": "🗝️ 我还掌握了哪些技能",
+          "manualSize": true,
+          "width": 442,
+          "height": 35
+        },
+        {
+          "id": "el-1778975112569-3934",
+          "type": "text",
+          "text": "在大量的练习、竞赛与实习中，我的技能随之不断拓展",
+          "manualSize": true,
+          "width": 442,
+          "height": 30
+        }
+      ],
+      "width": 512,
+      "height": 144,
+      "className": "note-card",
+      "children": []
+    },
+    {
+      "id": "block-1778975184218-8460",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 3456,
+      "y": -128,
+      "elements": [
+        {
+          "id": "el-1778975184218-6976",
+          "type": "text",
+          "text": "●  交互设计： 参与「有数BI+知数」的4轮版本迭代，主要参与问答、助手模块的需求评审、交互设计与汇报，配合视觉与研发确保需求高效落地\n\n●  设计提需： 通过LLM竞调优化产品MD渲染框架，同时迭代提示词，提升输出内容阅读舒适度，自主撰写PRD并推动2次体验需求立项并上线\n\n●  AI与赋能： 独立进行AI coding辅助产品微动效探索，采用Codex实现单复杂场景平均用时3h，预计节省 2 开发人天；协助“UI-check”skill \n                     测试与迭代，通过MCP打通“设计稿-实现页面-标红走查表格”流程，提升视觉还原走查效率，平均单轮AI走查项可用率达77%",
+          "width": 954,
+          "height": 138,
+          "manualSize": true
+        }
+      ],
+      "width": 1008,
+      "height": 192,
+      "className": "text-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778975322056-5245",
+      "page": "first",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": false,
+      "x": 3456,
+      "y": 160,
+      "elements": [
+        {
+          "id": "el-1778975322056-5452",
+          "type": "text",
+          "text": "●  设计输出： 在职期间独立负责保险官网、汽车金融CRM、战投BI的需求设计；负责小米汽车共借模块与钱包App金刚位频道迭代等C端业务；\n                     参与2025天星C端设计组件库迭代升级、归纳汽车运营海报模版等设计沉淀工作\n\n●  设计探索： 累计20次分享AIGC设计趋势与前沿设计探索笔记，其中3个工具被试用，大幅提升团队整体设计效率/拓宽AI视野\n\n●  主要成果： 相关设计均上线，平均还原率达90%；组件库产出约130个通用组件及相关原子；外卖频道图标改版，AB test显示UV最高增长\n                     11%；钱包-电影频道结构迭代，相关3个动效均已成功开发，主动总结AE动效导出解决办法，已纳入团队知识库",
+          "width": 938,
+          "height": 160,
+          "manualSize": true
+        }
+      ],
+      "width": 1008,
+      "height": 224,
+      "className": "text-card",
+      "children": []
+    },
+    {
+      "id": "block-1778978284063-8675",
+      "page": "first",
+      "type": "card",
+      "layout": "horizontal",
+      "autoSize": true,
+      "x": -320,
+      "y": -320,
+      "elements": [
+        {
+          "id": "el-1778978285796-5286",
+          "type": "image",
+          "src": "uploads/canvas-1778979162354-ea7c5f72.png",
+          "intrinsicWidth": 240,
+          "intrinsicHeight": 240,
+          "width": 42,
+          "height": 42,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778978284063-689",
+          "type": "title",
+          "text": "Yitao_0228@163.com",
+          "width": 284,
+          "manualSize": false
+        }
+      ],
+      "width": 512,
+      "height": 80,
+      "className": "note-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778978408160-9455",
+      "page": "first",
+      "type": "card",
+      "layout": "horizontal",
+      "autoSize": true,
+      "x": -320,
+      "y": -160,
+      "elements": [
+        {
+          "id": "el-1778978408160-9529",
+          "type": "image",
+          "src": "uploads/canvas-1778979158323-041c5593.png",
+          "intrinsicWidth": 240,
+          "intrinsicHeight": 240,
+          "width": 42,
+          "height": 42,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778978408160-8164",
+          "type": "title",
+          "text": "19357629233         ",
+          "width": 392,
+          "manualSize": false
+        }
+      ],
+      "width": 512,
+      "height": 80,
+      "className": "note-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778978433375-7752",
+      "page": "first",
+      "type": "card",
+      "layout": "horizontal",
+      "autoSize": true,
+      "x": -320,
+      "y": 0,
+      "elements": [
+        {
+          "id": "el-1778978433375-1675",
+          "type": "image",
+          "src": "uploads/canvas-1778979151495-c8910477.png",
+          "intrinsicWidth": 240,
+          "intrinsicHeight": 240,
+          "width": 42,
+          "height": 42,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778978433375-891",
+          "type": "title",
+          "text": "Jiangyitao_888         ",
+          "width": 386,
+          "manualSize": false
+        }
+      ],
+      "width": 512,
+      "height": 80,
+      "className": "note-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778978922129-9784",
+      "page": "notes",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 576,
+      "y": 416,
+      "elements": [
+        {
+          "id": "el-1778978922129-2077",
+          "type": "image",
+          "src": "uploads/canvas-1778979194225-4aeb7610.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 926,
+          "height": 521,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 560,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778979009679-8557",
+      "page": "notes",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 576,
+      "y": 1056,
+      "elements": [
+        {
+          "id": "el-1778979009679-4367",
+          "type": "image",
+          "src": "uploads/canvas-1778979187494-ebff8ede.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 926,
+          "height": 521,
+          "manualSize": true
+        },
+        {
+          "id": "el-1778979009679-6211",
+          "type": "image",
+          "src": "uploads/canvas-1778979190871-c5478d68.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 926,
+          "height": 521,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 1088,
+      "className": "image-placeholder-card",
+      "children": []
+    },
+    {
+      "id": "copy-1778979023381-8782",
+      "page": "notes",
+      "type": "card",
+      "layout": "vertical",
+      "autoSize": true,
+      "x": 576,
+      "y": 2224,
+      "elements": [
+        {
+          "id": "el-1778979023381-3037",
+          "type": "image",
+          "src": "uploads/canvas-1778979141369-e0f5d97a.jpg",
+          "intrinsicWidth": 2880,
+          "intrinsicHeight": 1620,
+          "width": 926,
+          "height": 521,
+          "manualSize": true
+        }
+      ],
+      "width": 960,
+      "height": 560,
+      "className": "image-placeholder-card",
+      "children": []
+    }
+  ],
+  "connections": [
+    {
+      "id": "line-1778942948477-4349",
+      "page": "first",
+      "from": "group-1778940645009-4685",
+      "fromSide": "right",
+      "to": "copy-1778941043355-4027",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778942952442-8117",
+      "page": "first",
+      "from": "copy-1778941043355-4027",
+      "fromSide": "right",
+      "to": "copy-1778941135417-6358",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778942975211-9248",
+      "page": "first",
+      "from": "copy-1778941135417-6358",
+      "fromSide": "right",
+      "to": "copy-1778941279172-6901",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778966196203-4277",
+      "page": "first",
+      "from": "copy-1778938449173-922",
+      "fromSide": "right",
+      "to": "group-1778965687140-7207",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778966197647-7406",
+      "page": "first",
+      "from": "copy-1778938449173-922",
+      "fromSide": "right",
+      "to": "group-1778965881153-8577",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778968413428-7397",
+      "page": "first",
+      "from": "group-1778967570408-9042",
+      "fromSide": "bottom",
+      "to": "group-1778967572706-2045",
+      "toSide": "top"
+    },
+    {
+      "id": "line-1778968439290-166",
+      "page": "first",
+      "from": "group-1778967570408-9042",
+      "fromSide": "right",
+      "to": "group-1778967574606-9306",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778968444325-1191",
+      "page": "first",
+      "from": "group-1778967574606-9306",
+      "fromSide": "right",
+      "to": "group-1778967577892-5521",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778968487702-257",
+      "page": "first",
+      "from": "group-1778967577892-5521",
+      "fromSide": "bottom",
+      "to": "group-1778967579431-7710",
+      "toSide": "top"
+    },
+    {
+      "id": "line-1778968489575-4390",
+      "page": "first",
+      "from": "group-1778967576622-4812",
+      "fromSide": "right",
+      "to": "group-1778967579431-7710",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778968491665-4444",
+      "page": "first",
+      "from": "group-1778967572706-2045",
+      "fromSide": "right",
+      "to": "group-1778967576622-4812",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778973840736-4951",
+      "page": "jinbao",
+      "from": "copy-1778973840736-3493",
+      "fromSide": "right",
+      "to": "copy-1778973840736-7758",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778973840736-8731",
+      "page": "jinbao",
+      "from": "copy-1778973840736-7758",
+      "fromSide": "right",
+      "to": "copy-1778973840736-2416",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778973840736-1187",
+      "page": "jinbao",
+      "from": "copy-1778973840736-2416",
+      "fromSide": "right",
+      "to": "copy-1778973840736-7078",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778974122610-7437",
+      "page": "jinbao",
+      "from": "copy-1778974081410-5593",
+      "fromSide": "left",
+      "to": "copy-1778973840736-7078",
+      "toSide": "right"
+    },
+    {
+      "id": "line-1778974927353-8152",
+      "page": "netease",
+      "from": "copy-1778974927353-6697",
+      "fromSide": "right",
+      "to": "copy-1778974927353-3893",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778974927353-7181",
+      "page": "netease",
+      "from": "copy-1778974927353-3893",
+      "fromSide": "right",
+      "to": "copy-1778974927353-7235",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778974927353-1038",
+      "page": "netease",
+      "from": "copy-1778974927353-7235",
+      "fromSide": "right",
+      "to": "copy-1778974927353-1094",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778974927353-5662",
+      "page": "netease",
+      "from": "copy-1778974927353-1094",
+      "fromSide": "right",
+      "to": "copy-1778974927353-7375",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778974935439-1962",
+      "page": "wallet",
+      "from": "copy-1778974935438-761",
+      "fromSide": "right",
+      "to": "copy-1778974935438-767",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778974935439-918",
+      "page": "wallet",
+      "from": "copy-1778974935439-9566",
+      "fromSide": "right",
+      "to": "copy-1778974935438-2756",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778974935439-1873",
+      "page": "wallet",
+      "from": "copy-1778974935439-9566",
+      "fromSide": "left",
+      "to": "copy-1778974935438-767",
+      "toSide": "right"
+    },
+    {
+      "id": "line-1778974935439-1360",
+      "page": "wallet",
+      "from": "copy-1778974935438-761",
+      "fromSide": "left",
+      "to": "copy-1778974935438-7908",
+      "toSide": "right"
+    },
+    {
+      "id": "line-1778975152862-2890",
+      "page": "first",
+      "from": "block-1778975051119-9868",
+      "fromSide": "right",
+      "to": "group-1778967570408-9042",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778975154610-3080",
+      "page": "first",
+      "from": "block-1778975051119-9868",
+      "fromSide": "right",
+      "to": "group-1778967572706-2045",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778975157975-1140",
+      "page": "first",
+      "from": "block-1778936953573-4593",
+      "fromSide": "right",
+      "to": "block-1778975051119-9868",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778975159680-19",
+      "page": "first",
+      "from": "block-1778936953573-4593",
+      "fromSide": "right",
+      "to": "block-1778975092054-5726",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778975162262-8294",
+      "page": "first",
+      "from": "block-1778975092054-5726",
+      "fromSide": "right",
+      "to": "copy-1778938449173-922",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778975164787-5508",
+      "page": "first",
+      "from": "block-1778936953573-4593",
+      "fromSide": "right",
+      "to": "block-1778975112569-2576",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778975167151-560",
+      "page": "first",
+      "from": "block-1778975112569-2576",
+      "fromSide": "right",
+      "to": "group-1778940645009-4685",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778975315574-6982",
+      "page": "first",
+      "from": "group-1778965687140-7207",
+      "fromSide": "right",
+      "to": "block-1778975184218-8460",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778975342422-5240",
+      "page": "first",
+      "from": "group-1778965881153-8577",
+      "fromSide": "right",
+      "to": "copy-1778975322056-5245",
+      "toSide": "left"
+    },
+    {
+      "id": "line-1778978473355-998",
+      "page": "first",
+      "from": "copy-1778978433375-7752",
+      "fromSide": "bottom",
+      "to": "copy-1778970137036-2703",
+      "toSide": "top"
+    },
+    {
+      "id": "line-1778978475726-3859",
+      "page": "first",
+      "from": "block-1778978284063-8675",
+      "fromSide": "bottom",
+      "to": "copy-1778978408160-9455",
+      "toSide": "top"
+    },
+    {
+      "id": "line-1778978476820-6684",
+      "page": "first",
+      "from": "copy-1778978408160-9455",
+      "fromSide": "bottom",
+      "to": "copy-1778978433375-7752",
+      "toSide": "top"
+    },
+    {
+      "id": "line-1778979054582-3132",
+      "page": "notes",
+      "from": "copy-1778978922129-9784",
+      "fromSide": "bottom",
+      "to": "copy-1778979009679-8557",
+      "toSide": "top"
+    },
+    {
+      "id": "line-1778979056246-2939",
+      "page": "notes",
+      "from": "copy-1778979009679-8557",
+      "fromSide": "bottom",
+      "to": "copy-1778979023381-8782",
+      "toSide": "top"
+    }
+  ],
+  "view": {
+    "panX": 431.3939393939394,
+    "panY": 506.75757575757575,
+    "scale": 0.46060606060606063
+  },
+  "updatedAt": "2026-05-17T00:53:17.521Z"
+}
